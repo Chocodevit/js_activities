@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .valid{
+            color: green;
+        }
+        .invalid{
+            color:red;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="resultat">hola</p>
+    <button onclick="modifyP()">canviar text</button>
+    <input type="text" id="introDades">
+    <script>
+
+        const parragraf = document.getElementById("resultat");
+        const input = document.getElementById("introDades");
+
+        function modifyP() {
+            parragraf.textContent = "adeu";
+            //parragraf.textContent = input.value.includes("@");
+            console.log(parragraf);
+        }
+    </script>
+</body>
+
+</html>
